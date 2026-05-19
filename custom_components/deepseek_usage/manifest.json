@@ -1,0 +1,11 @@
+{
+  "domain": "deepseek_usage",
+  "name": "DeepSeek Usage",
+  "codeowners": ["@zeronova"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/Zeronova/HA_deepseek_usage",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "version": "0.1.0"
+}

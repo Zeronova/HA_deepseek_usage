@@ -1,0 +1,52 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "DeepSeek Usage",
+        "description": "Enter your DeepSeek Platform Token to see token usage data.\n\nFind your token at https://platform.deepseek.com → API Keys → Session-Token.",
+        "data": {
+          "platform_token": "DeepSeek Platform Token"
+        }
+      }
+    },
+    "error": {
+      "unknown": "Unknown error"
+    },
+    "abort": {
+      "single_instance_allowed": "DeepSeek Usage is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "DeepSeek Usage",
+        "description": "Update your DeepSeek Platform Token if needed.",
+        "data": {
+          "platform_token": "DeepSeek Platform Token"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "platform_status": {
+        "name": "Platform Status"
+      },
+      "balance": {
+        "name": "Balance"
+      },
+      "monthly_tokens": {
+        "name": "Monthly Tokens"
+      },
+      "monthly_cost": {
+        "name": "Monthly Cost"
+      },
+      "monthly_requests": {
+        "name": "Monthly Requests"
+      },
+      "estimated_tokens": {
+        "name": "Estimated Tokens"
+      }
+    }
+  }
+}
