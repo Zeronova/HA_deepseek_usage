@@ -4,7 +4,7 @@
 // @version      0.1.0
 // @description  Kopiert den DeepSeek Platform Session-Token per Klick in die Zwischenablage
 // @author       Zeronova
-// @match        https://platform.deepseek.com/api_keys
+// @match        https://platform.deepseek.com/usage*
 // @icon         https://platform.deepseek.com/favicon.ico
 // @grant        GM_setClipboard
 // @grant        GM_addStyle
