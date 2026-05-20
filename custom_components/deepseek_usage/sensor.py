@@ -88,6 +88,13 @@ class DeepSeekSensor(CoordinatorEntity[dict], SensorEntity):
         super().__init__(coordinator)
         self.entity_description = description
         self._attr_unique_id = f"{entry.entry_id}_{description.key}"
+        self._attr_device_info = {
+            "identifiers": {(DOMAIN, entry.entry_id)},
+            "name": "DeepSeek Usage",
+            "manufacturer": "DeepSeek",
+            "model": "DeepSeek API Usage Monitor",
+            "sw_version": "0.2.0",
+        }
 
     @property
     def available(self) -> bool:
