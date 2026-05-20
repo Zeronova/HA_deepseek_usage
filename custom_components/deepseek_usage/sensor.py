@@ -5,7 +5,6 @@ from __future__ import annotations
 from datetime import datetime
 
 from homeassistant.components.sensor import SensorEntity, SensorStateClass
-from homeassistant.const import UnitOfInformation
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity import EntityCategory
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
@@ -115,7 +114,7 @@ class DeepSeekMonthlyTokensSensor(DeepSeekSensor):
     """Monthly token usage."""
 
     _attr_translation_key = "monthly_tokens"
-    _attr_native_unit_of_measurement = UnitOfInformation.TOKENS
+    _attr_native_unit_of_measurement = "TK"
     _attr_state_class = SensorStateClass.TOTAL_INCREASING
 
     def __init__(
@@ -182,7 +181,7 @@ class DeepSeekEstimatedTokensSensor(DeepSeekSensor):
 
     _attr_translation_key = "estimated_tokens"
     _attr_state_class = SensorStateClass.MEASUREMENT
-    _attr_native_unit_of_measurement = UnitOfInformation.TOKENS
+    _attr_native_unit_of_measurement = "TK"
 
     def __init__(
         self,
